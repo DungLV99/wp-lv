@@ -1,0 +1,68 @@
+[08-Jan-2018 06:16:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function connection() on null in D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1058
+Stack trace:
+#0 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1024): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#1 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(859): Illuminate\Database\Eloquent\Model->getConnection()
+#2 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(818): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#3 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(802): Illuminate\Database\Eloquent\Model->newQueryWithoutScopes()
+#4 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(346): Illuminate\Database\Eloquent in D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php on line 1058
+[08-Jan-2018 06:16:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function connection() on null in D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1058
+Stack trace:
+#0 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1024): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#1 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(859): Illuminate\Database\Eloquent\Model->getConnection()
+#2 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(818): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#3 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(802): Illuminate\Database\Eloquent\Model->newQueryWithoutScopes()
+#4 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(346): Illuminate\Database\Eloquent in D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php on line 1058
+[08-Jan-2018 06:17:06 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php:218
+Stack trace:
+#0 D:\xampp\htdocs\web\wordpress\laravel\app\Http\Controllers\PageController.php(28): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#1 D:\xampp\htdocs\web\wordpress\wp-includes\class-wp-hook.php(286): App\Http\Controllers\PageController->ajaxHandler('')
+#2 D:\xampp\htdocs\web\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 D:\xampp\htdocs\web\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#4 D:\xampp\htdocs\web\wordpress\wp-admin\admin-ajax.php(97): do_action('wp_ajax_test')
+#5 {main}
+  thrown in D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php on line 218
+[08-Jan-2018 06:20:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function App\Http\Controllers\isAjax() in D:\xampp\htdocs\web\wordpress\laravel\app\Http\Controllers\Controller.php:23
+Stack trace:
+#0 D:\xampp\htdocs\web\wordpress\wp-includes\class-wp-hook.php(286): App\Http\Controllers\Controller->ajaxHandler('')
+#1 D:\xampp\htdocs\web\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 D:\xampp\htdocs\web\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 D:\xampp\htdocs\web\wordpress\wp-admin\admin-ajax.php(97): do_action('wp_ajax_test')
+#4 {main}
+  thrown in D:\xampp\htdocs\web\wordpress\laravel\app\Http\Controllers\Controller.php on line 23
+[08-Jan-2018 06:27:34 UTC] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php:218
+Stack trace:
+#0 D:\xampp\htdocs\web\wordpress\laravel\app\Http\Controllers\PageController.php(29): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#1 [internal function]: App\Http\Controllers\PageController->ajaxTest(Array)
+#2 D:\xampp\htdocs\web\wordpress\laravel\app\Http\Controllers\Controller.php(39): call_user_func(Array, Array)
+#3 D:\xampp\htdocs\web\wordpress\wp-includes\class-wp-hook.php(286): App\Http\Controllers\Controller->ajaxHandler('')
+#4 D:\xampp\htdocs\web\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 D:\xampp\htdocs\web\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#6 D:\xampp\htdocs\web\wordpress\wp-admin\admin-ajax.php(97): do_action('wp_ajax_test')
+#7 {main}
+  thrown in D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php on line 218
+[08-Jan-2018 06:30:47 UTC] PHP Fatal error:  Uncaught ReflectionException: Class db does not exist in D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:729
+Stack trace:
+#0 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(729): ReflectionClass->__construct('db')
+#1 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(608): Illuminate\Container\Container->build('db')
+#2 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(575): Illuminate\Container\Container->resolve('db')
+#3 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(1172): Illuminate\Container\Container->make('db')
+#4 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(159): Illuminate\Container\Container->offsetGet('db')
+#5 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Ill in D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 729
+[08-Jan-2018 06:31:19 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\DB' not found in D:\xampp\htdocs\web\wordpress\laravel\app\Http\Controllers\PageController.php:43
+Stack trace:
+#0 [internal function]: App\Http\Controllers\PageController->ajaxTest(Array)
+#1 D:\xampp\htdocs\web\wordpress\laravel\app\Http\Controllers\Controller.php(39): call_user_func(Array, Array)
+#2 D:\xampp\htdocs\web\wordpress\wp-includes\class-wp-hook.php(286): App\Http\Controllers\Controller->ajaxHandler('')
+#3 D:\xampp\htdocs\web\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 D:\xampp\htdocs\web\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\xampp\htdocs\web\wordpress\wp-admin\admin-ajax.php(97): do_action('wp_ajax_test')
+#6 {main}
+  thrown in D:\xampp\htdocs\web\wordpress\laravel\app\Http\Controllers\PageController.php on line 43
+[08-Jan-2018 06:32:03 UTC] PHP Fatal error:  Uncaught ReflectionException: Class db does not exist in D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:729
+Stack trace:
+#0 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(729): ReflectionClass->__construct('db')
+#1 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(608): Illuminate\Container\Container->build('db')
+#2 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(575): Illuminate\Container\Container->resolve('db')
+#3 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(1172): Illuminate\Container\Container->make('db')
+#4 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(159): Illuminate\Container\Container->offsetGet('db')
+#5 D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Ill in D:\xampp\htdocs\web\wordpress\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 729
